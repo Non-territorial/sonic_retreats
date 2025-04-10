@@ -121,11 +121,11 @@ export default function Home() {
         <div className="relative z-10 text-left max-w-6xl">
           <h1 className="text-5xl mb-4 text-white">LOCATION</h1>
           <p className="text-5xl leading-relaxed text-white">
-            A four-day stay amongst friends, <br />
-            with a shared context in culture, <br />
-            the depths of sound, deep listening, <br />
-            gastronomic experiences, and <br />
-            unfamiliar settings.
+            A four-day stay amongst strangers <br />
+            or friends, but definitely sharing <br />
+            interest in culture, the aesthetics <br />
+            of sound, deep listening, gastronomic <br /> 
+            experiences and unfamiliar settings.
           </p>
         </div>
         <Navbar position="bottom" />
@@ -143,7 +143,7 @@ export default function Home() {
             established composers and artists, <br />
             creating a special library and settings <br />
             sensitive to the location, context, <br />
-            pace, and time of year.
+            place, and time of year.
           </p>
         </div>
         <Navbar position="bottom" />
@@ -157,7 +157,7 @@ export default function Home() {
         <div className="relative z-10 text-left max-w-6xl">
           <h2 className="text-5xl mb-4 text-white">GASTRONOMY</h2>
           <p className="text-5xl leading-relaxed text-white">
-            SONIC reTREATS is growing a library  <br />
+            SONIC reTREATS is a growing library  <br />
             of locations and sonic works, <br />
             with gastronomy involving <br />
             equal artistic mastery, <br /> 
