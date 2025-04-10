@@ -1,103 +1,294 @@
+"use client";
+
+import Navbar from "../components/Navbar";
+import Video from "../components/Video";
+import { useState } from "react";
 import Image from "next/image";
+import VideoModal from "../components/VideoModal";
 
 export default function Home() {
+  const [email, setEmail] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedPlaybackId, setSelectedPlaybackId] = useState("");
+  const [selectedVideoTitle, setSelectedVideoTitle] = useState("");
+
+  const retreats = [
+    {
+      title: "(UN)DISCLOSED",
+      location: "Salina, Aeolian Islands, ITALY",
+      time: "Fall 2025",
+      playbackId: "wfF7RDwo3YXBUYhY178nsOLa01r9iZgsRLA029MaReZeY", // Replace with actual playback ID
+    },
+    {
+      title: "100%BACH",
+      location: "Tuscany, ITALY",
+      time: "Fall 2025",
+      playbackId: "your-playback-id-2", // Replace with actual playback ID
+    },
+    {
+      title: "MAGIC MOUNTAIN",
+      location: "Argentario, Tuscany, ITALY",
+      time: "Spring 2026",
+      playbackId: "FIdVmVeoBG3kNww01V6ngSB02LTDnWsMlnhOdXirIEpMk", // Replace with actual playback ID
+    },
+    {
+      title: "MONASTERO",
+      location: "Pantelleria Island, ITALY",
+      time: "Spring 2026",
+      playbackId: "uSs6IpKwYW3xl881vP8xHxo7osGbKRAWJPamLPDCkhQ", // Replace with actual playback ID
+    },
+    {
+      title: "SILENCE VENTURES",
+      location: "Edsåsdalen, SWEDEN",
+      time: "Summer 2026",
+      playbackId: "yjz87DkI00uYCuCpRlgUIN01JQeWPh5sPM3Q6WhpSzy2s", // Replace with actual playback ID
+    },
+    {
+      title: "UPCOMING",
+      location: "JAPAN",
+      time: "Fall 2026",
+      playbackId: "uau2HW8LOHyQuc23BGYp64mECwykcIBsPX00ghlpQn9U", // Replace with actual playback ID
+    },
+  ];
+
+  const handleEmailSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("/api/submit-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+      if (response.ok) {
+        setSubmitted(true);
+        setEmail("");
+      } else {
+        // Check if the response is JSON before parsing
+        const contentType = response.headers.get("Content-Type");
+        if (contentType && contentType.includes("application/json")) {
+          const errorData = await response.json();
+          console.error("Failed to submit email:", errorData.error || response.statusText);
+        } else {
+          console.error("Failed to submit email:", response.statusText);
+        }
+      }
+    } catch (error) {
+      console.error("Error submitting email:", error);
+    }
+  };
+
+  const openModal = (playbackId: string, title: string) => {
+    setSelectedPlaybackId(playbackId);
+    setSelectedVideoTitle(title);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedPlaybackId("");
+    setSelectedVideoTitle("");
+  };
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <div className="flex flex-col">
+      {/* Section 1: Hero with Background Video */}
+      <section id="section-1" className="relative h-screen flex items-center text-white bg-black">
+        <Navbar position="top" />
+        <Video playbackId="PuJJKuIuU6DIsNMHzbcLIiJcJMmLTS4027QO9YkTPXIE" />
+        <div className="absolute inset-0 bg-black opacity-10" />
+        <Navbar position="bottom" />
+      </section>
+
+      {/* Section 2: Locations */}
+      <section id="section-2" className="relative h-screen flex items-center justify-center text-white bg-black">
+        <Navbar position="top" />
+        <Video playbackId="8UqsYaz56iC02EQj7UX902RnZKgd478fBjSXg00FtAvWao" />
+        <div className="absolute inset-0 bg-black opacity-10" />
+        <div className="relative z-10 text-left max-w-6xl">
+          <h1 className="text-5xl mb-4 text-white">LOCATION</h1>
+          <p className="text-5xl leading-relaxed text-white">
+            A four-day stay amongst friends, <br />
+            with a shared context in culture, <br />
+            the depths of sound, deep listening, <br />
+            gastronomic experiences, and <br />
+            unfamiliar settings.
+          </p>
+        </div>
+        <Navbar position="bottom" />
+      </section>
+
+      {/* Section 3: Sound */}
+      <section id="section-3" className="relative h-screen flex items-center justify-center text-white bg-black">
+        <Navbar position="top" />
+        <Video playbackId="lbePbk00zcnpS3FEvRYwhWGcWf5mif61aqz5k01u45gAA" />
+        <div className="absolute inset-0 bg-black opacity-10" />
+        <div className="relative z-10 text-left max-w-6xl ml-30">
+          <h2 className="text-5xl mb-4 text-white">SOUND</h2>
+          <p className="text-5xl leading-relaxed text-white">
+            We collaborate with emerging and <br />
+            established composers and artists, <br />
+            creating a special library and settings <br />
+            sensitive to the location, context, <br />
+            pace, and time of year.
+          </p>
+        </div>
+        <Navbar position="bottom" />
+      </section>
+
+      {/* Section 4: Gastronomy and Locations */}
+      <section id="section-4" className="relative h-screen flex items-center justify-center text-white bg-black">
+        <Navbar position="top" />
+        <Video playbackId="UPKkxrQH02vRcP1KhtvGpTRFxsfvFzW02DnZfycZScSbc" />
+        <div className="absolute inset-0 bg-black opacity-10" />
+        <div className="relative z-10 text-left max-w-6xl">
+          <h2 className="text-5xl mb-4 text-white">GASTRONOMY</h2>
+          <p className="text-5xl leading-relaxed text-white">
+            SONIC reTREATS is growing a library  <br />
+            of locations and sonic works, <br />
+            with gastronomy involving <br />
+            equal artistic mastery, <br /> 
+            and the intention of finding the <br /> 
+            best ingredients, trying not <br /> 
+            to destroy them.
+          </p>
+        </div>
+        <Navbar position="bottom" />
+      </section>
+
+      {/* Section 5: Collage of Images */}
+      <section id="section-5" className="relative h-screen bg-black">
+        <Navbar position="top" />
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
+          src="/images/collage.png"
+          alt="SONIC reTREATS Locations Collage"
+          fill
+          className="object-cover"
           priority
         />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div className="absolute inset-0 bg-black opacity-5" />
+        <div className="relative z-10 text-center text-white flex items-center justify-center h-full">
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <Navbar position="bottom" />
+      </section>
+
+      <section
+        id="section-6"
+        className="relative h-screen bg-black flex items-center justify-center"
+      >
+        <Navbar position="top" />
+        <div className="relative z-10 text-left max-w-6xl">
+          <div className="text-white">
+            <div className="grid grid-cols-[1fr_2fr_1fr] gap-x-12 text-base font-bold mb-4">
+              <span>TITLE</span>
+              <span>LOCATION</span>
+              <span className="text-left">TIME</span>
+            </div>
+            <div className="space-y-4 text-gray-500 text-base">
+              {retreats.map((retreat, index) => (
+                <div
+                  key={index}
+                  className="grid grid-cols-[1fr_2fr_1fr] gap-x-12 border-b border-gray-500 pb-2"
+                >
+                  <button
+                    onClick={() => openModal(retreat.playbackId, retreat.title)}
+                    className="text-left text-gray-500 hover:text-gray-400"
+                  >
+                    {retreat.title}
+                  </button>
+                  <span>{retreat.location}</span>
+                  <span className="text-left">{retreat.time}</span>
+                </div>
+              ))}
+            </div>
+            <div className="mt-8">
+              {submitted ? (
+                <p className="text-yellow-600">
+                  Thank you! We’ll send the catalog to your email.
+                </p>
+              ) : (
+                <form
+                  onSubmit={handleEmailSubmit}
+                  className="flex flex-col gap-4 items-center"
+                >
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="YOUR EMAIL"
+                    className="px-4 py-2 border rounded w-full max-w-md bg-black text-white border-gray-500 text-base"
+                    required
+                  />
+                  <button
+                    type="submit"
+                    className="text-gray-500 text-base underline"
+                  >
+                    Request SONIC reTREATS Catalog
+                  </button>
+                </form>
+              )}
+            </div>
+          </div>
+        </div>
+        <Navbar position="bottom" />
+      </section>
+
+      {/* Section 7: Full-Page Section */}
+      <section id="section-7" className="relative h-screen flex items-center justify-center text-white bg-black">
+        <Navbar position="top" />
+        <div className="relative z-10 text-left max-w-6xl">
+        <p className="text-5xl leading-relaxed mb-8 text-white">
+            The focus is on creating an <br />
+            intimate, subtle, and high-quality <br />
+            auditory experience, <br />
+            enhanced by carefully curated <br />
+            aesthetics. This approach <br />
+            encourages deep listening and <br />
+            sensory immersion, elevating the <br />
+            sound into an exhibition.
+          </p>
+        </div>
+        <Navbar position="bottom" />
+      </section>
+
+       {/* Section 8: Collage of Images */}
+       <section id="section-5" className="relative h-screen bg-black">
+        <Navbar position="top" />
+        <Image
+          src="/images/collage_bis.jpeg"
+          alt="SONIC reTREATS Locations Collage"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-black opacity-5" />
+        <div className="relative z-10 text-center text-white flex items-center justify-center h-full">
+        </div>
+        <Navbar position="bottom" />
+      </section>
+
+      {/* Section 9: Full-Page Section */}
+      <section id="section-8" className="relative h-screen flex items-center justify-center text-white bg-black">
+        <Navbar position="top" />
+        <div className="relative z-10 text-left max-w-6xl">
+          <p className="text-5xl leading-relaxed text-white">
+            SONIC reTREATS is a cultural <br />
+            hospitality concept, operated by <br />
+            Brave Hills
+          </p>
+        </div>
+        <Navbar position="bottom" />
+      </section>
+
+      {/* Video Modal */}
+      <VideoModal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        playbackId={selectedPlaybackId}
+        videoTitle={selectedVideoTitle}
+      />
     </div>
   );
 }
