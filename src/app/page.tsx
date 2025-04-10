@@ -9,9 +9,11 @@ import VideoModal from "../components/VideoModal";
 export default function Home() {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedPlaybackId, setSelectedPlaybackId] = useState("");
   const [selectedVideoTitle, setSelectedVideoTitle] = useState("");
+  const [isLoading] = useState(false);
 
   const retreats = [
     {
@@ -21,7 +23,7 @@ export default function Home() {
       playbackId: "wfF7RDwo3YXBUYhY178nsOLa01r9iZgsRLA029MaReZeY", // Replace with actual playback ID
     },
     {
-      title: "100%BACH",
+      title: "100% BACH",
       location: "Tuscany, ITALY",
       time: "Fall 2025",
       playbackId: "your-playback-id-2", // Replace with actual playback ID
@@ -62,21 +64,30 @@ export default function Home() {
         },
         body: JSON.stringify({ email }),
       });
+  
+      console.log("Response status:", response.status); // Debug log
+      console.log("Response headers:", response.headers.get("Content-Type")); // Debug log
+  
+      let data;
+      try {
+        const text = await response.text(); // Get raw response body
+        console.log("Raw response body:", text); // Debug log
+        data = JSON.parse(text); // Manually parse JSON
+      } catch (jsonError) {
+        console.error("Error parsing JSON:", jsonError);
+        setError("Invalid response from server");
+        return;
+      }
+  
       if (response.ok) {
         setSubmitted(true);
         setEmail("");
       } else {
-        // Check if the response is JSON before parsing
-        const contentType = response.headers.get("Content-Type");
-        if (contentType && contentType.includes("application/json")) {
-          const errorData = await response.json();
-          console.error("Failed to submit email:", errorData.error || response.statusText);
-        } else {
-          console.error("Failed to submit email:", response.statusText);
-        }
+        setError(data.error || "Failed to submit email");
       }
     } catch (error) {
       console.error("Error submitting email:", error);
+      setError("Error submitting email. Please try again.");
     }
   };
 
@@ -209,25 +220,24 @@ export default function Home() {
                   Thank you! We’ll send the catalog to your email.
                 </p>
               ) : (
-                <form
-                  onSubmit={handleEmailSubmit}
-                  className="flex flex-col gap-4 items-center"
-                >
-                  <input
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="YOUR EMAIL"
-                    className="px-4 py-2 border rounded w-full max-w-md bg-black text-white border-gray-500 text-base"
-                    required
-                  />
-                  <button
-                    type="submit"
-                    className="text-gray-500 text-base underline"
-                  >
-                    Request SONIC reTREATS Catalog
-                  </button>
-                </form>
+                <form onSubmit={handleEmailSubmit} className="flex flex-col gap-4 items-center">
+          {error && <p className="text-red-500">{error}</p>}
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="YOUR EMAIL"
+            className="px-4 py-2 border rounded w-full max-w-md bg-black text-white border-gray-500 text-base"
+            required
+          />
+          <button
+            type="submit"
+            className="text-gray-500 text-base underline"
+            disabled={isLoading}
+          >
+            {isLoading ? "Submitting..." : "Request SONIC reTREATS Catalog"}
+          </button>
+        </form>
               )}
             </div>
           </div>

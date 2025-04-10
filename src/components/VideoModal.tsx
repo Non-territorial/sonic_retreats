@@ -33,6 +33,7 @@ const VideoModal: React.FC<VideoModalProps> = ({
           className="w-full"
           autoPlay
           onEnded={onClose} // Close the modal when the video ends
+          disableCookies
         />
       </div>
     </div>
