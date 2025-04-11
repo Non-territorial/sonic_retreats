@@ -111,7 +111,7 @@ export default function Home() {
   <Video playbackId="RfB9GYZ9KDVAZGx2mKY9IUyBOeDilKj6rWLSjqgYJoA" />
   <div className="absolute inset-0 bg-black opacity-10" />
   <div className="relative z-10 text-left w-full max-w-sm sm:max-w-md md:max-w-6xl px-4 sm:px-6">
-    <p className="text-base sm:text-3xl md:text-5xl leading-relaxed md:leading-relaxed md:ml-14 text-white">
+    <p className="text-base sm:text-3xl md:text-5xl leading-relaxed md:ml-14 md:leading-relaxed text-white">
     SONIC reTREATS are dedicated to the experience of sound in various architecturally and acoustically interesting locations, contextually accompanied by curated gastronomy.
     </p>
   </div>
@@ -137,9 +137,9 @@ export default function Home() {
   <Navbar position="top" />
   <Video playbackId="lbePbk00zcnpS3FEvRYwhWGcWf5mif61aqz5k01u45gAA" />
   <div className="absolute inset-0 bg-black opacity-10" />
-  <div className="relative z-10 text-left w-full max-w-sm sm:max-w-md md:max-w-6xl ml-4 sm:ml-10 md:ml-30 px-4 sm:px-6">
-    <h2 className="text-base sm:text-3xl md:text-5xl mb-2 sm:mb-3 md:mb-4 text-white">SOUND</h2>
-    <p className="text-base sm:text-3xl md:text-5xl leading-relaxed md:leading-relaxed text-white">
+  <div className="relative z-10 text-left w-full max-w-sm sm:max-w-md md:max-w-6xl px-4 sm:px-6">
+    <h2 className="text-base sm:text-3xl md:text-5xl mb-2 sm:mb-3 md:mb-4 md:ml-14 text-white">SOUND</h2>
+    <p className="text-base sm:text-3xl md:text-5xl leading-relaxed md:leading-relaxed md:ml-14 text-white">
       We collaborate with emerging and established composers and artists, creating a special library and settings sensitive to the location, context, place, and time of year.
     </p>
   </div>
