@@ -106,12 +106,17 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Section 1: Hero with Background Video */}
-      <section id="section-1" className="relative min-h-screen flex items-center text-white bg-black">
-        <Navbar position="top" />
-        <Video playbackId="PuJJKuIuU6DIsNMHzbcLIiJcJMmLTS4027QO9YkTPXIE" />
-        <div className="absolute inset-0 bg-black opacity-10" />
-        <Navbar position="bottom" />
-      </section>
+      <section id="section-1" className="relative min-h-[90vh] sm:min-h-screen md:min-h-screen flex items-center justify-center text-white bg-black">
+  <Navbar position="top" />
+  <Video playbackId="RfB9GYZ9KDVAZGx2mKY9IUyBOeDilKj6rWLSjqgYJoA" />
+  <div className="absolute inset-0 bg-black opacity-10" />
+  <div className="relative z-10 text-left w-full max-w-sm sm:max-w-md md:max-w-6xl px-4 sm:px-6">
+    <p className="text-base sm:text-3xl md:text-5xl leading-relaxed md:leading-relaxed md:ml-14 text-white">
+    SONIC reTREATS are dedicated to the experience of sound in various architecturally and acoustically interesting locations, contextually accompanied by curated gastronomy.
+    </p>
+  </div>
+  <Navbar position="bottom" />
+</section>
 
       {/* Section 2: Locations */}
       <section id="section-2" className="relative min-h-[90vh] sm:min-h-screen md:min-h-screen flex items-center justify-center text-white bg-black">
