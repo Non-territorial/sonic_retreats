@@ -59,7 +59,6 @@ const Navbar: React.FC<{ position: "top" | "bottom" }> = ({ position }) => {
             </div>
           </div>
           <div className="flex-1 flex justify-center">
-            <Link href="/">
               <Image
                 src="/images/nav-logo.png"
                 alt="Navigation Logo"
@@ -67,7 +66,6 @@ const Navbar: React.FC<{ position: "top" | "bottom" }> = ({ position }) => {
                 height={38}
                 className="object-contain sm:w-[60px] sm:h-[45px] md:w-[60px] md:h-[45px]"
               />
-            </Link>
           </div>
           <div className="flex-1 flex justify-end">
             <div className="flex flex-row gap-1 sm:gap-2 md:gap-3">
