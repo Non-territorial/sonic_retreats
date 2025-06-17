@@ -19,25 +19,19 @@ export default function Home() {
     {
       title: "(UN)DISCLOSED",
       location: "Salina, Aeolian Islands, ITALY",
-      time: "Fall 2025",
+      time: "Spring/Fall 2026",
       playbackId: "wfF7RDwo3YXBUYhY178nsOLa01r9iZgsRLA029MaReZeY", // Replace with actual playback ID
-    },
-    {
-      title: "100% BACH",
-      location: "Tuscany, ITALY",
-      time: "Fall 2025",
-      playbackId: "your-playback-id-2", // Replace with actual playback ID
     },
     {
       title: "MAGIC MOUNTAIN",
       location: "Argentario, Tuscany, ITALY",
-      time: "Spring 2026",
+      time: "Spring 2027",
       playbackId: "FIdVmVeoBG3kNww01V6ngSB02LTDnWsMlnhOdXirIEpMk", // Replace with actual playback ID
     },
     {
       title: "MONASTERO",
       location: "Pantelleria Island, ITALY",
-      time: "Spring 2026",
+      time: "Spring 2027",
       playbackId: "uSs6IpKwYW3xl881vP8xHxo7osGbKRAWJPamLPDCkhQ", // Replace with actual playback ID
     },
     {
@@ -49,7 +43,7 @@ export default function Home() {
     {
       title: "UPCOMING",
       location: "JAPAN",
-      time: "Fall 2026",
+      time: "Fall 2027",
       playbackId: "uau2HW8LOHyQuc23BGYp64mECwykcIBsPX00ghlpQn9U", // Replace with actual playback ID
     },
   ];
