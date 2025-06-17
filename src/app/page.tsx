@@ -23,6 +23,12 @@ export default function Home() {
       playbackId: "wfF7RDwo3YXBUYhY178nsOLa01r9iZgsRLA029MaReZeY", // Replace with actual playback ID
     },
     {
+      title: "SILENCE VENTURES",
+      location: "Edsåsdalen, SWEDEN",
+      time: "Summer 2026",
+      playbackId: "yjz87DkI00uYCuCpRlgUIN01JQeWPh5sPM3Q6WhpSzy2s", // Replace with actual playback ID
+    },
+     {
       title: "MAGIC MOUNTAIN",
       location: "Argentario, Tuscany, ITALY",
       time: "Spring 2027",
@@ -33,12 +39,6 @@ export default function Home() {
       location: "Pantelleria Island, ITALY",
       time: "Spring 2027",
       playbackId: "uSs6IpKwYW3xl881vP8xHxo7osGbKRAWJPamLPDCkhQ", // Replace with actual playback ID
-    },
-    {
-      title: "SILENCE VENTURES",
-      location: "Edsåsdalen, SWEDEN",
-      time: "Summer 2026",
-      playbackId: "yjz87DkI00uYCuCpRlgUIN01JQeWPh5sPM3Q6WhpSzy2s", // Replace with actual playback ID
     },
     {
       title: "UPCOMING",
