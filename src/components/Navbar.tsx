@@ -3,10 +3,26 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
-const Navbar: React.FC<{ position: "top" | "bottom" }> = ({ position }) => {
-  const router = useRouter();
+
+interface NavbarProps {
+  position: "top" | "bottom";
+  translations: {
+    retreats: string;
+    enquire: string;
+    contact: string;
+    faq: string;
+    terms: string;
+    privacy: string;
+  };
+}
+
+const locales = ["en", "se", "it", "jp"];
+
+const Navbar: React.FC<NavbarProps> = ({ position, translations }) => {
+  const pathname = usePathname();
+  const currentLocale = pathname.split("/")[1] || "en";
 
   useEffect(() => {
     if (typeof window !== "undefined" && window.location.hash) {
@@ -16,7 +32,7 @@ const Navbar: React.FC<{ position: "top" | "bottom" }> = ({ position }) => {
         targetElement.scrollIntoView({ behavior: "smooth" });
       }
     }
-  }, [router]);
+  }, []);
 
   return (
     <nav
@@ -26,7 +42,7 @@ const Navbar: React.FC<{ position: "top" | "bottom" }> = ({ position }) => {
         <div className="relative w-full flex justify-between items-center">
           <div className="flex-1"></div>
           <Link
-            href="/"
+           href="/en"
             className="text-base sm:text-lg md:text-xl font-bold"
             style={{ color: "#ffffff" }}
           >
@@ -34,19 +50,28 @@ const Navbar: React.FC<{ position: "top" | "bottom" }> = ({ position }) => {
           </Link>
           <div className="flex-1 flex justify-end">
             <div className="hidden md:flex gap-1 sm:gap-2 md:gap-4">
+              {locales.map((locale) => (
+                <Link
+                  key={locale}
+                  href={`/${locale}${pathname.replace(`/${currentLocale}`, "")}`}
+                  className={`${currentLocale === locale ? "font-bold" : ""} text-blue-600 hover:underline text-xs sm:text-sm md:text-base`}
+                >
+                  {locale.toUpperCase()}
+                </Link>
+              ))}
               <Link
-                href="/#section-6"
+                href={`/${currentLocale}/#section-6`}
                 className="text-xs sm:text-sm md:text-base"
                 style={{ color: "#ffffff" }}
               >
-                Retreats
+                {translations.retreats}
               </Link>
               <a
                 href="mailto:info@sonicretreats.net"
                 className="text-xs sm:text-sm md:text-base"
                 style={{ color: "#ffffff" }}
               >
-                Enquire
+                {translations.enquire}
               </a>
             </div>
           </div>
@@ -59,43 +84,43 @@ const Navbar: React.FC<{ position: "top" | "bottom" }> = ({ position }) => {
             </div>
           </div>
           <div className="flex-1 flex justify-center">
-              <Image
-                src="/images/nav-logo.png"
-                alt="Navigation Logo"
-                width={50}
-                height={38}
-                className="object-contain sm:w-[60px] sm:h-[45px] md:w-[60px] md:h-[45px]"
-              />
+            <Image
+              src="/images/nav-logo.png"
+              alt="Navigation Logo"
+              width={50}
+              height={38}
+              className="object-contain sm:w-[60px] sm:h-[45px] md:w-[60px] md:h-[45px]"
+            />
           </div>
           <div className="flex-1 flex justify-end">
             <div className="flex flex-row gap-1 sm:gap-2 md:gap-3">
-              <Link
+              <a
                 href="mailto:info@sonicretreats.net"
                 className="text-[10px] sm:text-xs md:text-sm"
                 style={{ color: "#ffffff" }}
               >
-                CONTACT
-              </Link>
+                {translations.contact}
+              </a>
               <Link
-                href="/faq"
+                href={`/${currentLocale}/faq`}
                 className="text-[10px] sm:text-xs md:text-sm"
                 style={{ color: "#ffffff" }}
               >
-                FAQ
+                {translations.faq}
               </Link>
               <Link
-                href="/terms"
+                href={`/${currentLocale}/terms`}
                 className="text-[10px] sm:text-xs md:text-sm"
                 style={{ color: "#ffffff" }}
               >
-                T&C
+                {translations.terms}
               </Link>
               <Link
-                href="/privacy"
+                href={`/${currentLocale}/privacy`}
                 className="text-[10px] sm:text-xs md:text-sm"
                 style={{ color: "#ffffff" }}
               >
-                PP
+                {translations.privacy}
               </Link>
             </div>
           </div>

@@ -3,13 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-ibm-plex-mono: "IBM Plex Mono", monospace;
+  --font-noto-sans-jp: "Noto Sans JP", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,31 +17,31 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: IBM Plex Mono, sans-serif;
+  font-family: var(--font-ibm-plex-mono), monospace;
+  font-weight: 300;
 }
 
+html[lang="jp"] body {
+  font-family: var(--font-noto-sans-jp), sans-serif;
+  font-weight: 400;
+}
+
+nav {
+  font-family: var(--font-ibm-plex-mono), monospace;
+  font-weight: 300;
+}
+
+html[lang="jp"] nav {
+  font-family: var(--font-noto-sans-jp), sans-serif;
+  font-weight: 400;
+}
 
 nav a {
-  color: #ffffff !important; /* Force white color */
+  color: #ffffff;
 }
 
 nav a:hover {
-  color: #9ca3af !important; /* text-gray-400 on hover */
-}
-
-@font-face {
-  font-family: "IBM Plex Mono";
-  src: url("/fonts/IBMPlexMono-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@layer base {
-  html {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 300;
-  }
+  color: #9ca3af;
 }
 
 mux-player {

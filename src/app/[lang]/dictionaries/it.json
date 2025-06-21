@@ -1,0 +1,183 @@
+{
+  "homepage": {
+    "section1": {
+  "description": "SONIC reTREATS celebra l’esperienza del suono in luoghi unici, dove architettura e acustica si fondono armoniosamente, accompagnati da una gastronomia raffinata e curata nei minimi dettagli."
+},
+"section2": {
+  "title": "LUOGO",
+  "description": "Un soggiorno di quattro giorni in compagnia di sconosciuti o amici, uniti dalla passione per la cultura, l’estetica del suono, l’ascolto profondo, le esperienze culinarie e ambientazioni fuori dall’ordinario."
+},
+"section3": {
+  "title": "SUONO",
+  "description": "Collaboriamo con compositori e artisti, sia emergenti che affermati, per creare una collezione unica di opere sonore e ambientazioni che rispecchiano il luogo, il contesto e la stagione."
+},
+"section4": {
+  "title": "GASTRONOMIA",
+  "description": "SONIC reTREATS è una raccolta in continua evoluzione di luoghi e creazioni sonore, arricchita da una gastronomia che unisce maestria artistica e ingredienti di altissima qualità, trattati con cura per esaltarne i sapori."
+},
+"section5": {
+  "image_alt": "Collage dei luoghi di SONIC reTREATS"
+},
+    "section6": {
+      "title_label": "TITOLO",
+      "location_label": "LUOGO",
+      "time_label": "TEMPO",
+      "retreats": [
+        {
+          "title": "(UN)DISCLOSED",
+          "location": "Salina, Isole Eolie, ITALIA",
+          "time": "Primavera/Autunno 2026",
+          "playbackId": "wfF7RDwo3YXBUYhY178nsOLa01r9iZgsRLA029MaReZeY"
+        },
+        {
+          "title": "SILENCE VENTURES",
+          "location": "Edsåsdalen, SVEZIA",
+          "time": "Estate 2026",
+          "playbackId": "yjz87DkI00uYCuCpRlgUIN01JQeWPh5sPM3Q6WhpSzy2s"
+        },
+        {
+          "title": "MAGIC MOUNTAIN",
+          "location": "Argentario, Toscana, ITALIA",
+          "time": "Primavera 2027",
+          "playbackId": "FIdVmVeoBG3kNww01V6ngSB02LTDnWsMlnhOdXirIEpMk"
+        },
+        {
+          "title": "MONASTERO",
+          "location": "Isola di Pantelleria, ITALIA",
+          "time": "Primavera 2027",
+          "playbackId": "uSs6IpKwYW3xl881vP8xHxo7osGbKRAWJPamLPDCkhQ"
+        },
+        {
+          "title": "IN ARRIVO",
+          "location": "GIAPPONE",
+          "time": "Autunno 2027",
+          "playbackId": "uau2HW8LOHyQuc23BGYp64mECwykcIBsPX00ghlpQn9U"
+        }
+      ],
+      "form": {
+        "placeholder": "IL TUO EMAIL",
+        "button": "Richiedi il Catalogo SONIC reTREATS",
+        "submitting": "Invio in corso...",
+        "success": "Grazie! Ti invieremo il catalogo al tuo email.",
+        "error": "Errore nell'invio dell'email. Riprova.",
+        "invalid_response": "Risposta non valida dal server"
+      }
+    },
+    "section7": {
+      "description": "L'obiettivo è creare un'esperienza uditiva intima, sottile e di alta qualità, arricchita da un'estetica attentamente curata. Questo approccio incoraggia un ascolto profondo e un'immersione sensoriale, elevando il suono a un'esposizione."
+    },
+    "section8": {
+      "image_alt": "Collage dei Luoghi di SONIC reTREATS"
+    },
+    "section9": {
+      "description": "SONIC reTREATS è un concetto di ospitalità culturale, gestito da Brave Hills"
+    }
+  },
+  "faq": {
+    "what_is_sonic_retreats": {
+      "title": "Cos'è SONIC reTREATS?",
+      "description": "SONIC reTREATS sono dedicati all'esperienza del suono in vari luoghi interessanti in Italia, combinando esperienze architettoniche, acustiche e gastronomiche."
+    },
+    "who_is_for": {
+      "title": "A chi è rivolto?",
+      "description": "Per il viaggiatore curioso interessato alla cultura, a qualcuno avventuroso e aperto a nuove esperienze."
+    },
+    "locations": {
+      "title": "E i luoghi?",
+      "description": "Curiamo luoghi dove possiamo ospitare esperienze SONIC reTREAT, principalmente ville remote, case di montagna, luoghi distribuiti sulle isole, immersi nella natura.\n\nLe qualità dei luoghi che ci ispirano sono spazi ampi che possono ospitare da 10 a 30 persone. La posizione effettiva è la cosa più importante. Seguita dall'architettura, dall'acustica e dalla combinazione di questi dettagli.\n\nA volte è una semplice casa di montagna, a volte una villa contemporanea sul mare, un ex-monastero o un resort di qualche tipo. Ciò che conta è il carattere del luogo e le sue qualità trasformative."
+    },
+    "how_to_join": {
+      "title": "Come posso partecipare a un evento?",
+      "description": "Puoi partecipare a un evento registrandoti tramite il nostro modulo email sulla homepage. Ti invieremo un catalogo con gli eventi futuri e i dettagli."
+    },
+    "cost": {
+      "title": "Quanto costa partecipare?",
+      "description": "A seconda del luogo, il prezzo dei biglietti varia da 2.500 a 5.000 EUR a persona."
+    },
+    "included": {
+      "title": "Cosa è incluso?",
+      "description": "Alloggio\nInstallazioni Sonore\nSessioni di Ascolto\nEno-Gastronomia Costiera\nBar Infinito\nEscursioni Culturali"
+    },
+    "host_own": {
+      "title": "Posso ospitare un SONIC reTREAT nella mia proprietà?",
+      "description": "Sì, invia il tuo luogo per una potenziale collaborazione."
+    }
+  },
+  "terms": {
+    "title": "Termini e Condizioni",
+    "intro": "Benvenuto su SONIC reTREATS, un sito web gestito da Brave Hills Ltd, una società registrata in Inghilterra. Accedendo o utilizzando il nostro sito web su sonicretreats.net / sonicretreats.com / sonicretreats.org (il \"Sito\"), accetti di essere vincolato da questi Termini e Condizioni (\"Termini\"). Se non accetti questi Termini, ti preghiamo di non utilizzare il Sito.",
+    "purpose": {
+      "title": "1. Scopo del Sito",
+      "description": "Lo scopo principale di SONIC reTREATS è promuovere i nostri servizi di ritiro e raccogliere indirizzi email da potenziali ospiti interessati a ricevere aggiornamenti, offerte e informazioni su SONIC reTREATS. Utilizzando il Sito, riconosci che esso funge da piattaforma per questi scopi."
+    },
+    "eligibility": {
+      "title": "2. Idoneità",
+      "description": "Devi avere almeno 18 anni per utilizzare questo Sito. Accedendo al Sito, dichiari e garantisci di soddisfare questo requisito di età."
+    },
+    "use": {
+      "title": "3. Uso del Sito",
+      "description": "Accetti di utilizzare il Sito solo per scopi leciti e in conformità con questi Termini. Non puoi utilizzare il Sito in alcun modo che possa danneggiare, disabilitare, sovraccaricare o compromettere la sua funzionalità o interferire con il godimento di altri utenti. L'uso non autorizzato del Sito, inclusi tentativi di accedere ad aree o dati riservati, è proibito."
+    },
+    "email_privacy": {
+      "title": "4. Raccolta Email e Privacy",
+      "description": "Fornendo il tuo indirizzo email tramite il Sito, acconsenti a essere contattato con materiali promozionali, newsletter e aggiornamenti su SONIC reTREATS. Puoi rinunciare a queste comunicazioni in qualsiasi momento contattandoci direttamente. Le tue informazioni personali, incluso il tuo indirizzo email, saranno trattate in conformità con la nostra Politica sulla Privacy. Rispettiamo il Regolamento Generale sulla Protezione dei Dati del Regno Unito (UK GDPR) e il Data Protection Act 2018."
+    },
+    "intellectual_property": {
+      "title": "5. Proprietà Intellettuale",
+      "description": "Tutto il contenuto del Sito, inclusi testi, immagini, loghi e design, è di proprietà di Brave Hills o dei suoi licenziatari ed è protetto da leggi sul diritto d'autore, marchi e altre leggi sulla proprietà intellettuale. Non puoi riprodurre, distribuire o creare opere derivate da qualsiasi contenuto del Sito senza il nostro previo consenso scritto."
+    },
+    "governing_law": {
+      "title": "6. Legge Applicabile",
+      "description": "Questi Termini saranno regolati e interpretati in conformità con le leggi dell'Inghilterra e del Galles. Qualsiasi controversia derivante o connessa a questi Termini sarà soggetta alla giurisdizione esclusiva dei tribunali dell'Inghilterra e del Galles."
+    },
+    "contact": {
+      "title": "7. Contattaci",
+      "description": "Se hai domande su questi Termini o sul Sito, contattaci a:\nBrave Hills Ltd.\n4th Floor, Silverstream House, 45 Fitzroy Street, Londra,\nInghilterra, W1T 6EB\nEmail: info@sonicretreats.net"
+    }
+  },
+  "privacy": {
+    "title": "Politica sulla Privacy",
+    "last_updated": "Ultimo Aggiornamento: 10 Aprile 2025",
+    "intro": "A SONIC reTREATS, gestito da Brave Hills, una società registrata in Inghilterra, ci impegniamo a proteggere la tua privacy. Questa Politica sulla Privacy spiega come raccogliamo, utilizziamo e proteggiamo le tue informazioni personali quando utilizzi il nostro sito web su [sonicretreats.net / sonicretreats.com / sonicretreats.org] (il \"Sito\").",
+    "collect": {
+      "title": "Informazioni Raccolte",
+      "description": "Raccogliamo il tuo indirizzo email quando lo fornisci volontariamente tramite il Sito, ad esempio quando ti iscrivi per ricevere aggiornamenti, newsletter o informazioni su SONIC reTREATS."
+    },
+    "use": {
+      "title": "Come Utilizziamo le Tue Informazioni",
+      "description": "Utilizziamo il tuo indirizzo email per inviarti materiali promozionali, newsletter e aggiornamenti su SONIC reTREATS. Trattiamo questi dati in base al tuo consenso, che puoi revocare in qualsiasi momento."
+    },
+    "sharing": {
+      "title": "Condivisione delle Tue Informazioni",
+      "description": "Non condividiamo le tue informazioni personali con terze parti, salvo quanto richiesto dalla legge o per proteggere i nostri diritti."
+    },
+    "rights": {
+      "title": "I Tuoi Diritti",
+      "description": "Secondo il Regolamento Generale sulla Protezione dei Dati del Regno Unito (UK GDPR), hai il diritto di accedere, rettificare o cancellare i tuoi dati personali, o opporti al loro trattamento. Per esercitare questi diritti, contattaci a info@sonicretreats.net."
+    },
+    "security": {
+      "title": "Sicurezza dei Dati",
+      "description": "Adottiamo misure ragionevoli per proteggere le tue informazioni da accessi o divulgazioni non autorizzati."
+    },
+    "cookies": {
+      "title": "Cookies",
+      "description": "Il Sito potrebbe utilizzare cookies per migliorare la tua esperienza. Puoi gestire le preferenze dei cookie tramite le impostazioni del tuo browser."
+    },
+    "changes": {
+      "title": "Modifiche a Questa Politica",
+      "description": "Potremmo aggiornare questa Politica sulla Privacy di tanto in tanto. Le modifiche saranno pubblicate su questa pagina."
+    },
+    "contact": {
+      "title": "Contattaci",
+      "description": "Se hai domande su questa Politica sulla Privacy, contattaci a:\nBrave Hills\n4th Floor, Silverstream House, 45 Fitzroy Street, Londra,\nInghilterra, W1T 6EB\nEmail: info@sonicretreats.net"
+    }
+  },
+  "navbar": {
+    "retreats": "Ritiri",
+    "enquire": "Info",
+    "contact": "Contatti",
+    "faq": "FAQ",
+    "terms": "Termini",
+    "privacy": "Privacy"
+  }
+}

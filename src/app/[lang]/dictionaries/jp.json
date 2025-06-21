@@ -1,0 +1,183 @@
+{
+  "homepage": {
+    "section1": {
+      "description": "SONIC reTREATSは、建築的かつ音響的に興味深いさまざまな場所での音の体験に特化し、厳選されたガストロノミーと共に提供されます。"
+    },
+    "section2": {
+      "title": "場所",
+      "description": "見知らぬ人や友人と過ごす4日間の滞在で、間違いなく文化、音の美学、深いリスニング、美食体験、そして馴染みのない環境への興味を共有します。"
+    },
+    "section3": {
+      "title": "音",
+      "description": "新進気鋭および確立された作曲家やアーティストと協力し、場所、コンテキスト、場所、季節に敏感な特別なライブラリと設定を作成します。"
+    },
+    "section4": {
+      "title": "ガストロノミー",
+      "description": "SONIC reTREATSは、場所と音の作品の成長するライブラリであり、ガストロノミーは同等の芸術的熟練を伴い、最高の食材を見つけ、それを壊さないようにする意図があります。"
+    },
+    "section5": {
+      "image_alt": "SONIC reTREATS ロケーションコラージュ"
+    },
+    "section6": {
+      "title_label": "タイトル",
+      "location_label": "場所",
+      "time_label": "時期",
+      "retreats": [
+        {
+          "title": "(UN)DISCLOSED",
+          "location": "サリーナ、エオリア諸島、イタリア",
+          "time": "2026年春/秋",
+          "playbackId": "wfF7RDwo3YXBUYhY178nsOLa01r9iZgsRLA029MaReZeY"
+        },
+        {
+          "title": "SILENCE VENTURES",
+          "location": "エドソーサダレン、スウェーデン",
+          "time": "2026年夏",
+          "playbackId": "yjz87DkI00uYCuCpRlgUIN01JQeWPh5sPM3Q6WhpSzy2s"
+        },
+        {
+          "title": "MAGIC MOUNTAIN",
+          "location": "アルジェンタリオ、トスカーナ、イタリア",
+          "time": "2027年春",
+          "playbackId": "FIdVmVeoBG3kNww01V6ngSB02LTDnWsMlnhOdXirIEpMk"
+        },
+        {
+          "title": "MONASTERO",
+          "location": "パンテレリア島、イタリア",
+          "time": "2027年春",
+          "playbackId": "uSs6IpKwYW3xl881vP8xHxo7osGbKRAWJPamLPDCkhQ"
+        },
+        {
+          "title": "近日公開",
+          "location": "日本",
+          "time": "2027年秋",
+          "playbackId": "uau2HW8LOHyQuc23BGYp64mECwykcIBsPX00ghlpQn9U"
+        }
+      ],
+      "form": {
+        "placeholder": "あなたのメール",
+        "button": "SONIC reTREATSカタログをリクエスト",
+        "submitting": "送信中...",
+        "success": "ありがとう！カタログをあなたのメールに送信します。",
+        "error": "メール送信エラー。もう一度試してください。",
+        "invalid_response": "サーバーからの無効な応答"
+      }
+    },
+    "section7": {
+      "description": "焦点は、親密で繊細かつ高品質な聴覚体験を創造することにあり、慎重に厳選された美学によって強化されます。このアプローチは、深いリスニングと感覚的没入を促し、音を展示物に昇華させます。"
+    },
+    "section8": {
+      "image_alt": "SONIC reTREATS ロケーションコラージュ"
+    },
+    "section9": {
+      "description": "SONIC reTREATSは、Brave Hillsが運営する文化的なホスピタリティコンセプトです"
+    }
+  },
+  "faq": {
+    "what_is_sonic_retreats": {
+      "title": "SONIC reTREATSとは何ですか？",
+      "description": "SONIC reTREATSは、イタリアのさまざまな興味深い場所での音の体験に特化し、建築、音響、美食の体験を組み合わせています。"
+    },
+    "who_is_for": {
+      "title": "これは誰のためのものですか？",
+      "description": "文化に興味を持つ好奇心旺盛な旅行者から、冒険的で新しいことにオープンな人まで。"
+    },
+    "locations": {
+      "title": "場所について教えてください。",
+      "description": "私たちはSONIC reTREAT体験を開催できる場所を厳選します。主に自然に囲まれた遠隔地のヴィラ、山の家、島々に分散した場所です。\n\n私たちをインスパイアする場所の特徴は、10～30人を収容できる広々とした場所です。実際の場所が最も重要で、次に建築、音響、そしてそれらの詳細の組み合わせが続きます。\n\n時には質素な山の家、時には海辺の現代的なヴィラ、元修道院、またはある種のリゾートです。重要なのは、場所の個性とその変革的な質です。"
+    },
+    "how_to_join": {
+      "title": "イベントに参加するにはどうすればいいですか？",
+      "description": "ホームページのメールフォームで登録することでイベントに参加できます。近日中のイベントと詳細を含むカタログをお送りします。"
+    },
+    "cost": {
+      "title": "参加費用はどれくらいですか？",
+      "description": "場所によって、チケット価格は1人あたり2,500～5,000ユーロの範囲です。"
+    },
+    "included": {
+      "title": "何が含まれていますか？",
+      "description": "宿泊施設\n音響インスタレーション\nリスニングセッション\n沿岸のエノガストロノミー\n無制限バー\n文化的遠足"
+    },
+    "host_own": {
+      "title": "自分の物件でSONIC reTREATを開催できますか？",
+      "description": "はい、潜在的なコラボレーションのためにあなたの場所を提出してください。"
+    }
+  },
+  "terms": {
+    "title": "利用規約",
+    "intro": "SONIC reTREATSへようこそ。これはイングランドに登録された会社、Brave Hills Ltdが運営するウェブサイトです。sonicretreats.net / sonicretreats.com / sonicretreats.org（「ウェブサイト」）にアクセスまたは使用することで、これらの利用規約（「規約」）に拘束されることに同意します。これらの規約に同意しない場合、ウェブサイトを使用しないでください。",
+    "purpose": {
+      "title": "1. ウェブサイトの目的",
+      "description": "SONIC reTREATSの主な目的は、リトリートサービスを宣伝し、SONIC reTREATSに関するアップデート、オファー、情報を希望する潜在的なゲストからメールアドレスを収集することです。ウェブサイトを使用することで、これらの目的のためのプラットフォームとして機能することを認識します。"
+    },
+    "eligibility": {
+      "title": "2. 資格",
+      "description": "このウェブサイトを使用するには、18歳以上である必要があります。ウェブサイトにアクセスすることで、この年齢要件を満たしていることを表明し、保証します。"
+    },
+    "use": {
+      "title": "3. ウェブサイトの使用",
+      "description": "あなたは、合法的な目的でのみ、かつこれらの規約に従ってウェブサイトを使用することに同意します。ウェブサイトを損害、機能停止、過負荷、または機能障害を引き起こす方法で使用したり、他のユーザーの楽しみを妨げることはできません。制限されたエリアやデータへのアクセス試行を含む、ウェブサイトの不正使用は禁止されています。"
+    },
+    "email_privacy": {
+      "title": "4. メール収集とプライバシー",
+      "description": "ウェブサイトを通じてメールアドレスを提供することで、プロモーション資料、ニュースレター、SONIC reTREATSに関するアップデートを送信することに同意します。これらの通信は、直接連絡することでいつでもオプトアウトできます。あなたのメールアドレスを含む個人情報は、プライバシーポリシーに従って処理されます。私たちは英国一般データ保護規則（UK GDPR）および2018年データ保護法を遵守します。"
+    },
+    "intellectual_property": {
+      "title": "5. 知的財産",
+      "description": "ウェブサイト上のすべてのコンテンツ（テキスト、画像、ロゴ、デザインを含む）は、Brave Hillsまたはそのライセンサーの財産であり、著作権、商標、その他の知的財産法によって保護されています。事前の書面による許可なく、ウェブサイトのコンテンツを複製、配布、または派生作品を作成することはできません。"
+    },
+    "governing_law": {
+      "title": "6. 準拠法",
+      "description": "これらの規約は、イングランドおよびウェールズの法律に従って管理および解釈されます。これらの規約に基づく、または関連する紛争は、イングランドおよびウェールズの裁判所の専属管轄権に服します。"
+    },
+    "contact": {
+      "title": "7. お問い合わせ",
+      "description": "これらの規約またはウェブサイトに関する質問がある場合は、以下までご連絡ください：\nBrave Hills Ltd.\n4th Floor, Silverstream House, 45 Fitzroy Street, ロンドン,\nイングランド, W1T 6EB\nメール: info@sonicretreats.net"
+    }
+  },
+  "privacy": {
+    "title": "プライバシーポリシー",
+    "last_updated": "最終更新日：2025年4月10日",
+    "intro": "SONIC reTREATSは、イングランドに登録された会社、Brave Hillsが運営しており、皆様のプライバシーを保護することに取り組んでいます。このプライバシーポリシーは、[sonicretreats.net / sonicretreats.com / sonicretreats.org]（「ウェブサイト」）を使用する際に、個人情報をどのように収集、使用、保護するかを説明します。",
+    "collect": {
+      "title": "収集する情報",
+      "description": "ウェブサイトを通じて自発的に提供された場合、例えば、アップデート、ニュースレター、またはSONIC reTREATSに関する情報にサインアップする際に、あなたのメールアドレスを収集します。"
+    },
+    "use": {
+      "title": "情報の使用方法",
+      "description": "あなたのメールアドレスを使用して、プロモーション資料、ニュースレター、SONIC reTREATSに関するアップデートを送信します。このデータはあなたの同意に基づいて処理され、いつでも撤回することができます。"
+    },
+    "sharing": {
+      "title": "情報の共有",
+      "description": "法律で要求される場合や当社の権利を保護する場合を除き、あなたの個人情報を第三者と共有しません。"
+    },
+    "rights": {
+      "title": "あなたの権利",
+      "description": "英国一般データ保護規則（UK GDPR）に基づき、あなたは個人データへのアクセス、修正、削除、またはその処理に対する異議申し立ての権利を有します。これらの権利を行使するには、info@sonicretreats.netまでご連絡ください。"
+    },
+    "security": {
+      "title": "データセキュリティ",
+      "description": "不正アクセスや開示からあなたの情報を保護するために合理的な措置を講じます。"
+    },
+    "cookies": {
+      "title": "クッキー",
+      "description": "ウェブサイトは、あなたの体験を向上させるためにクッキーを使用する場合があります。ブラウザの設定を通じてクッキーの設定を管理できます。"
+    },
+    "changes": {
+      "title": "このポリシーの変更",
+      "description": "このプライバシーポリシーは随時更新されることがあります。変更はこのページに掲載されます。"
+    },
+    "contact": {
+      "title": "お問い合わせ",
+      "description": "このプライバシーポリシーに関する質問がある場合は、以下までご連絡ください：\nBrave Hills\n4th Floor, Silverstream House, 45 Fitzroy Street, ロンドン,\nイングランド, W1T 6EB\nメール: info@sonicretreats.net"
+    }
+  },
+  "navbar": {
+    "retreats": "リトリート",
+    "enquire": "問い合わせ",
+    "contact": "連絡先",
+    "faq": "よくある質問",
+    "terms": "利用規約",
+    "privacy": "プライバシー"
+  }
+}

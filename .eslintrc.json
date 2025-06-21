@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    "@next/next/no-page-custom-font": "off",
+    "@next/next/no-document-import-in-page": "off"
+  }
+}

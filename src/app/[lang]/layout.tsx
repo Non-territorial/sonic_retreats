@@ -1,7 +1,6 @@
 import { Metadata } from "next";
-import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
-import { IBM_Plex_Mono } from "next/font/google";
+import { IBM_Plex_Mono, Noto_Sans_JP } from "next/font/google";
 
 const ibmPlexMono = IBM_Plex_Mono({
   weight: "300",
@@ -10,21 +9,32 @@ const ibmPlexMono = IBM_Plex_Mono({
   variable: "--font-ibm-plex-mono",
 });
 
+const notoSansJP = Noto_Sans_JP({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-noto-sans-jp",
+});
+
 export const metadata: Metadata = {
   title: "SONIC reTREATS",
   description: "Immersive sound experiences in unique locations.",
 };
 
-export default function RootLayout({
+export default async function LocaleLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: Promise<{ lang: string }>;
 }) {
+  const { lang } = await params;
+
   return (
-    <html lang="en" className={ibmPlexMono.variable}>
+    <html lang={lang} className={`${ibmPlexMono.variable} ${lang === "jp" ? notoSansJP.variable : ""}`}>
       <head />
       <body>
-        {children}
+        <main>{children}</main>
         <Analytics />
       </body>
     </html>
