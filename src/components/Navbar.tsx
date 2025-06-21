@@ -43,7 +43,7 @@ const Navbar: React.FC<NavbarProps> = ({ position, translations }) => {
           <div className="flex-1"></div>
           <Link
            href="/en"
-            className="text-base sm:text-lg md:text-xl font-bold"
+            className="text-base sm:text-lg md:text-xl"
             style={{ color: "#ffffff" }}
           >
             SONIC reTREATS

@@ -23,7 +23,7 @@ body {
 
 html[lang="jp"] body {
   font-family: var(--font-noto-sans-jp), sans-serif;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 nav {
@@ -33,7 +33,7 @@ nav {
 
 html[lang="jp"] nav {
   font-family: var(--font-noto-sans-jp), sans-serif;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 nav a {

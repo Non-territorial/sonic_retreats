@@ -10,7 +10,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 const notoSansJP = Noto_Sans_JP({
-  weight: ["400", "700"],
+  weight: ["300", "700"],
   subsets: ["latin"],
   display: "swap",
   variable: "--font-noto-sans-jp",
