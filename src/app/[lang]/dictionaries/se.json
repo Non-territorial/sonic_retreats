@@ -173,11 +173,11 @@
     }
   },
   "navbar": {
-    "retreats": "Retreater",
+    "retreats": "Retreats",
     "enquire": "Förfrågan",
     "contact": "Kontakt",
-    "faq": "Vanliga frågor",
-    "terms": "Villkor",
-    "privacy": "Integritet"
+    "faq": "FAQ",
+    "terms": "T&C",
+    "privacy": "Privacy"
   }
 }

@@ -173,11 +173,11 @@
   }
 },
 "navbar": {
-  "retreats": "Ritiro",
-  "enquire": "Informazioni",
+  "retreats": "Ritiri",
+  "enquire": "Info",
   "contact": "Contatti",
-  "faq": "Domande Frequenti",
-  "terms": "Termini",
+  "faq": "FAQ",
+  "terms": "T&C",
   "privacy": "Privacy"
 }
 }
