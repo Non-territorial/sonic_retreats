@@ -19,11 +19,13 @@ export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
   console.log("Request pathname:", pathname);
 
-  // Skip middleware for static files, API routes, and Next.js internals
+  // Skip middleware for static files, API routes, Next.js internals, and source maps
   if (
     pathname.startsWith("/_next") ||
     pathname.startsWith("/api") ||
-    pathname.startsWith("/favicon.ico")
+    pathname.startsWith("/favicon.ico") ||
+    pathname.endsWith(".js.map") ||
+    pathname.match(/\.(js|css|png|jpg|jpeg|gif|svg|woff2?|ttf|eot|ico|map)$/i)
   ) {
     console.log("Skipping middleware for:", pathname);
     return NextResponse.next();
@@ -43,17 +45,17 @@ export function middleware(request: NextRequest) {
   // Redirect root (/) or non-locale paths to the detected locale
   const locale = getLocale(request);
   let newPath = pathname === "/" ? `/${locale}` : `/${locale}${pathname}`;
-  
-  // Handle invalid routes like /terms by redirecting to default locale
+
+  // Handle invalid routes by redirecting to default locale
   if (!pathnameHasLocale && pathname !== "/") {
     newPath = `/${locale}${pathname}`;
   }
-  
+
   console.log(`Redirecting ${pathname} to ${newPath}`);
   const newUrl = new URL(newPath, request.nextUrl.origin);
   return NextResponse.redirect(newUrl);
 }
 
 export const config = {
-  matcher: ["/((?!_next|api|favicon.ico).*)"],
+  matcher: ["/((?!_next|api|favicon.ico|.*\\.(js|css|png|jpg|jpeg|gif|svg|woff2?|ttf|eot|ico|map)).*)"],
 };

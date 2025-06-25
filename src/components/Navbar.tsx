@@ -5,7 +5,6 @@ import Link from "next/link";
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 
-
 interface NavbarProps {
   position: "top" | "bottom";
   translations: {
@@ -42,33 +41,33 @@ const Navbar: React.FC<NavbarProps> = ({ position, translations }) => {
         <div className="relative w-full flex justify-between items-center">
           <div className="flex-1"></div>
           <Link
-           href="/en"
-            className="text-base sm:text-lg md:text-xl"
+            href="/en"
+            className="text-base sm:text-lg md:text-xl font-bold"
             style={{ color: "#ffffff" }}
           >
             SONIC reTREATS
           </Link>
           <div className="flex-1 flex justify-end">
-            <div className="hidden md:flex gap-1 sm:gap-2 md:gap-4">
+            <div className="flex flex-row gap-1 sm:gap-2 md:gap-4">
               {locales.map((locale) => (
                 <Link
                   key={locale}
                   href={`/${locale}${pathname.replace(`/${currentLocale}`, "")}`}
-                  className={`${currentLocale === locale ? "font-bold" : ""} text-blue-600 hover:underline text-xs sm:text-sm md:text-base`}
+                  className={`${currentLocale === locale ? "font-bold" : ""} text-blue-600 hover:underline text-[10px] sm:text-sm md:text-base`}
                 >
                   {locale.toUpperCase()}
                 </Link>
               ))}
               <Link
                 href={`/${currentLocale}/#section-6`}
-                className="text-xs sm:text-sm md:text-base"
+                className="hidden md:inline text-[10px] sm:text-sm md:text-base"
                 style={{ color: "#ffffff" }}
               >
                 {translations.retreats}
               </Link>
               <a
                 href="mailto:info@sonicretreats.net"
-                className="text-xs sm:text-sm md:text-base"
+                className="hidden md:inline text-[10px] sm:text-sm md:text-base"
                 style={{ color: "#ffffff" }}
               >
                 {translations.enquire}
