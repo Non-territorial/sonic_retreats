@@ -41,7 +41,7 @@ const VideoModal: React.FC<VideoModalProps> = ({
             disableCookies
           />
           {/* Description */}
-          <div className="mt-4 text-white text-xs sm:text-sm md:text-base leading-relaxed max-w-full break-words">
+          <div className="mt-4 ml-4 text-white text-xs sm:text-sm md:text-base leading-relaxed max-w-full break-words">
             {videoDescription}
           </div>
         </div>
