@@ -11,6 +11,7 @@ interface Retreat {
   location: string;
   time: string;
   playbackId: string;
+  description: string;
 }
 
 interface Dictionary {
@@ -62,6 +63,7 @@ export default function HomeClient({ retreats, dict, navbarTranslations }: HomeC
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedPlaybackId, setSelectedPlaybackId] = useState("");
   const [selectedVideoTitle, setSelectedVideoTitle] = useState("");
+  const [selectedVideoDescription, setSelectedVideoDescription] = useState("");
   const [isLoading] = useState(false);
 
   const handleEmailSubmit = async (e: React.FormEvent) => {
@@ -97,9 +99,10 @@ export default function HomeClient({ retreats, dict, navbarTranslations }: HomeC
     }
   };
 
-  const openModal = (playbackId: string, title: string) => {
+  const openModal = (playbackId: string, title: string, description: string) => {
     setSelectedPlaybackId(playbackId);
     setSelectedVideoTitle(title);
+    setSelectedVideoDescription(description);
     setIsModalOpen(true);
   };
 
@@ -107,6 +110,7 @@ export default function HomeClient({ retreats, dict, navbarTranslations }: HomeC
     setIsModalOpen(false);
     setSelectedPlaybackId("");
     setSelectedVideoTitle("");
+    setSelectedVideoDescription("");
   };
 
   return (
@@ -216,7 +220,7 @@ export default function HomeClient({ retreats, dict, navbarTranslations }: HomeC
                   className="grid grid-cols-3 gap-x-4 sm:gap-x-8 md:gap-x-12 border-b border-gray-500 pb-1 sm:pb-2"
                 >
                   <button
-                    onClick={() => openModal(retreat.playbackId, retreat.title)}
+                    onClick={() => openModal(retreat.playbackId, retreat.title, retreat.description)}
                     className="text-left text-gray-500 hover:text-gray-400"
                   >
                     {retreat.title}
@@ -311,6 +315,7 @@ export default function HomeClient({ retreats, dict, navbarTranslations }: HomeC
         onClose={closeModal}
         playbackId={selectedPlaybackId}
         videoTitle={selectedVideoTitle}
+        videoDescription={selectedVideoDescription}
       />
     </div>
   );

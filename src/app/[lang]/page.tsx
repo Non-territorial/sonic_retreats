@@ -6,6 +6,7 @@ interface Retreat {
   location: string;
   time: string;
   playbackId: string;
+  description: string;
 }
 
 interface Props {

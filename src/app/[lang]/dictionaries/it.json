@@ -27,31 +27,36 @@
           "title": "(UN)DISCLOSED",
           "location": "Salina, Isole Eolie, ITALIA",
           "time": "Primavera/Autunno 2026",
-          "playbackId": "wfF7RDwo3YXBUYhY178nsOLa01r9iZgsRLA029MaReZeY"
+          "playbackId": "wfF7RDwo3YXBUYhY178nsOLa01r9iZgsRLA029MaReZeY",
+          "description": "(UN)DISCLOSED è un’esperienza di viaggio sotto forma di mostra. Un viaggio artistico a Salina, un’isola remota siciliana nel Mediterraneo, con diverse esposizioni distribuite sull’isola. (UN)DISCLOSED trasforma il tuo soggiorno in un’esperienza d’arte viva, in un modo assolutamente unico. L’hotel dispone di 20 camere con bagno privato e terrazza o balcone, oltre a una spiaggia privata."
         },
         {
           "title": "SILENCE VENTURES",
           "location": "Edsåsdalen, SVEZIA",
           "time": "Estate 2026",
-          "playbackId": "yjz87DkI00uYCuCpRlgUIN01JQeWPh5sPM3Q6WhpSzy2s"
+          "playbackId": "yjz87DkI00uYCuCpRlgUIN01JQeWPh5sPM3Q6WhpSzy2s",
+          "description": "Nel nord della Svezia, una villa isolata immersa in una natura incontaminata si trasforma in un Sonic Resort di quattro giorni, dedicato all’ascolto profondo e alla gastronomia curata. Una collezione esclusiva di opere sonore rare viene presentata attraverso esperienze attive e passive, armonizzate con la natura circostante per aprire nuove prospettive di percezione."
         },
         {
           "title": "MAGIC MOUNTAIN",
           "location": "Argentario, Toscana, ITALIA",
           "time": "Primavera 2027",
-          "playbackId": "FIdVmVeoBG3kNww01V6ngSB02LTDnWsMlnhOdXirIEpMk"
+          "playbackId": "FIdVmVeoBG3kNww01V6ngSB02LTDnWsMlnhOdXirIEpMk",
+          "description": "Toscana. Una villa moderna sul mare trasformata in un’installazione artistica, che offre un’esperienza olistica combinando ascolto attivo e passivo, un viaggio gastronomico curato, un’installazione bar e la bellezza della natura circostante."
         },
         {
           "title": "MONASTERO",
           "location": "Isola di Pantelleria, ITALIA",
           "time": "Primavera 2027",
-          "playbackId": "uSs6IpKwYW3xl881vP8xHxo7osGbKRAWJPamLPDCkhQ"
+          "playbackId": "uSs6IpKwYW3xl881vP8xHxo7osGbKRAWJPamLPDCkhQ",
+          "description": "Un intimo ex monastero trasformato in un Sonic Retreat di quattro giorni. Un ambiente dedicato interamente al suono come protagonista, creato per un ascolto profondo e un’esperienza contemplativa."
         },
         {
-          "title": "IN ARRIVO",
+          "title": "UPCOMING",
           "location": "GIAPPONE",
           "time": "Autunno 2027",
-          "playbackId": "uau2HW8LOHyQuc23BGYp64mECwykcIBsPX00ghlpQn9U"
+          "playbackId": "uau2HW8LOHyQuc23BGYp64mECwykcIBsPX00ghlpQn9U",
+          "description": "In arrivo"
         }
       ],
       "form": {

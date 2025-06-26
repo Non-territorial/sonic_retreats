@@ -5,6 +5,7 @@ interface Retreat {
   location: string;
   time: string;
   playbackId: string;
+  description: string;
 }
 
 export interface Dictionary {
@@ -84,10 +85,8 @@ const dictionaries: Record<'en' | 'se' | 'it' | 'jp', () => Promise<Dictionary>>
 
 export const getDictionary = async (lang: string): Promise<Dictionary> => {
   console.log(`Loading dictionary for language: ${lang}`);
-  const validLang = locales.includes(lang) ? lang as 'en' | 'se' | 'it' | 'jp' : 'en';
+  const validLang = ['en', 'se', 'it', 'jp'].includes(lang) ? lang as 'en' | 'se' | 'it' | 'jp' : 'en';
   const dictionary = await dictionaries[validLang]();
   console.log(`Dictionary loaded for ${validLang}:`, Object.keys(dictionary));
   return dictionary;
 };
-
-const locales = ["en", "se", "it", "jp"];

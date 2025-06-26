@@ -18,7 +18,7 @@
     "section5": {
       "image_alt": "SONIC reTREATSのロケーションコラージュ"
     },
-    "section6": {
+   "section6": {
       "title_label": "タイトル",
       "location_label": "場所",
       "time_label": "時期",
@@ -27,31 +27,36 @@
           "title": "(UN)DISCLOSED",
           "location": "イタリア、エオリア諸島、サリーナ",
           "time": "2026年春・秋",
-          "playbackId": "wfF7RDwo3YXBUYhY178nsOLa01r9iZgsRLA029MaReZeY"
+          "playbackId": "wfF7RDwo3YXBUYhY178nsOLa01r9iZgsRLA029MaReZeY",
+          "description": "(UN)DISCLOSEDは、展示の形をとった旅の体験です。地中海の遠く離れたシチリアの島、サリーナを舞台に、島全体に広がる複数の展示で構成されています。このリトリートは、滞在を前例のない生きたアート体験に変えます。ホテルは、専用バスルームとテラスまたはバルコニー付きの20室と、プライベートビーチを備えています。"
         },
         {
           "title": "SILENCE VENTURES",
           "location": "スウェーデン、エドソーサダレン",
           "time": "2026年夏",
-          "playbackId": "yjz87DkI00uYCuCpRlgUIN01JQeWPh5sPM3Q6WhpSzy2s"
+          "playbackId": "yjz87DkI00uYCuCpRlgUIN01JQeWPh5sPM3Q6WhpSzy2s",
+          "description": "スウェーデン北部、原始の自然に囲まれたユニークなヴィラが、4日間のソニックリゾートに変身。深いリスニングと厳選されたガストロノミーに捧げられた空間です。貴重な音の作品が、アクティブとパッシブな体験を通じて紹介され、周辺の自然と調和し、新たな感知のレベルへと導きます。"
         },
         {
           "title": "MAGIC MOUNTAIN",
           "location": "イタリア、トスカーナ、アルジェンタリオ",
           "time": "2027年春",
-          "playbackId": "FIdVmVeoBG3kNww01V6ngSB02LTDnWsMlnhOdXirIEpMk"
+          "playbackId": "FIdVmVeoBG3kNww01V6ngSB02LTDnWsMlnhOdXirIEpMk",
+          "description": "トスカーナ。海辺のモダンなヴィラがアートインスタレーションに生まれ変わり、アクティブとパッシブなリスニング、厳選された美食の旅、バーインスタレーション、そして周囲の自然が融合した総合的な体験を提供します。"
         },
         {
           "title": "MONASTERO",
           "location": "イタリア、パンテレリア島",
           "time": "2027年春",
-          "playbackId": "uSs6IpKwYW3xl881vP8xHxo7osGbKRAWJPamLPDCkhQ"
+          "playbackId": "uSs6IpKwYW3xl881vP8xHxo7osGbKRAWJPamLPDCkhQ",
+          "description": "親密な元修道院が、4日間のソニックリトリートに変身。音を主役にした環境で、深いリスニングのための空間を提供し、思索にふけるための特別な場を創り出します。"
         },
         {
           "title": "近日公開",
           "location": "日本",
           "time": "2027年秋",
-          "playbackId": "uau2HW8LOHyQuc23BGYp64mECwykcIBsPX00ghlpQn9U"
+          "playbackId": "uau2HW8LOHyQuc23BGYp64mECwykcIBsPX00ghlpQn9U",
+          "description": "近日公開"
         }
       ],
       "form": {

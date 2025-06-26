@@ -19,40 +19,45 @@
       "image_alt": "SONIC reTREATS Platser Kollage"
     },
     "section6": {
-      "title_label": "TITEL",
-      "location_label": "PLATS",
-      "time_label": "TID",
-      "retreats": [
-        {
-          "title": "(UN)DISCLOSED",
-          "location": "Salina, Eoliska öarna, ITALIEN",
-          "time": "Vår/Höst 2026",
-          "playbackId": "wfF7RDwo3YXBUYhY178nsOLa01r9iZgsRLA029MaReZeY"
-        },
-        {
-          "title": "SILENCE VENTURES",
-          "location": "Edsåsdalen, SVERIGE",
-          "time": "Sommar 2026",
-          "playbackId": "yjz87DkI00uYCuCpRlgUIN01JQeWPh5sPM3Q6WhpSzy2s"
-        },
-        {
-          "title": "MAGIC MOUNTAIN",
-          "location": "Argentario, Toscana, ITALIEN",
-          "time": "Vår 2027",
-          "playbackId": "FIdVmVeoBG3kNww01V6ngSB02LTDnWsMlnhOdXirIEpMk"
-        },
-        {
-          "title": "MONASTERO",
-          "location": "Pantelleria ön, ITALIEN",
-          "time": "Vår 2027",
-          "playbackId": "uSs6IpKwYW3xl881vP8xHxo7osGbKRAWJPamLPDCkhQ"
-        },
-        {
-          "title": "KOMMANDE",
-          "location": "JAPAN",
-          "time": "Höst 2027",
-          "playbackId": "uau2HW8LOHyQuc23BGYp64mECwykcIBsPX00ghlpQn9U"
-        }
+    "title_label": "TITEL",
+    "location_label": "PLATS",
+    "time_label": "TID",
+    "retreats": [
+      {
+        "title": "(UN)DISCLOSED",
+        "location": "Salina, Eoliska öarna, ITALIEN",
+        "time": "Vår/Höst 2026",
+        "playbackId": "wfF7RDwo3YXBUYhY178nsOLa01r9iZgsRLA029MaReZeY",
+        "description": "(UN)DISCLOSED är en reseupplevelse i form av en utställning. På Salina, en avlägsen siciliansk ö i Medelhavet, skapas en konstupplevelse med flera utspridda utställningar över ön. Detta retreat förvandlar din vistelse till en levande konstupplevelse på ett helt unikt sätt. Hotellet erbjuder 20 rum med privata badrum och terrass eller balkong, samt en privat strand."
+      },
+      {
+        "title": "SILENCE VENTURES",
+        "location": "Edsåsdalen, SVERIGE",
+        "time": "Sommar 2026",
+        "playbackId": "yjz87DkI00uYCuCpRlgUIN01JQeWPh5sPM3Q6WhpSzy2s",
+        "description": "I norra Sverige omvandlas en unik, avlägsen villa mitt i orörd natur till ett fyradagars Sonic Retreat, tillägnat djup lyssning och noggrant utvald gastronomi. En exklusiv samling av sällsynta ljudverk presenteras genom både aktiva och passiva upplevelser, i harmoni med den omgivande vildmarken för att väcka nya nivåer av perception."
+      },
+      {
+        "title": "MAGIC MOUNTAIN",
+        "location": "Argentario, Toscana, ITALIEN",
+        "time": "Vår 2027",
+        "playbackId": "FIdVmVeoBG3kNww01V6ngSB02LTDnWsMlnhOdXirIEpMk",
+        "description": "Toscana. En modern villa vid havet blir en konstinstallation, som erbjuder en helhetsupplevelse med aktiv och passiv lyssning, en kurerad kulinarisk resa, en barinstallation och den omgivande naturen."
+      },
+      {
+        "title": "MONASTERO",
+        "location": "Pantelleria ön, ITALIEN",
+        "time": "Vår 2027",
+        "playbackId": "uSs6IpKwYW3xl881vP8xHxo7osGbKRAWJPamLPDCkhQ",
+        "description": "Ett intimt före detta kloster förvandlas till ett fyradagars Sonic Retreat. Här skapas en miljö där ljudet står i centrum, med utrymme för djup lyssning och kontemplativt engagemang."
+      },
+      {
+        "title": "KOMMANDE",
+        "location": "JAPAN",
+        "time": "Höst 2027",
+        "playbackId": "uau2HW8LOHyQuc23BGYp64mECwykcIBsPX00ghlpQn9U",
+        "description": "Kommande"
+      }
       ],
       "form": {
         "placeholder": "DIN E-POST",
