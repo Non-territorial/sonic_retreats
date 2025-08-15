@@ -230,37 +230,6 @@ export default function HomeClient({ retreats, dict, navbarTranslations }: HomeC
                 </div>
               ))}
             </div>
-            <div className="mt-4 sm:mt-6 md:mt-8">
-              {submitted ? (
-                <p className="text-yellow-600 text-xs sm:text-sm md:text-base">
-                  {dict.homepage.section6.form.success}
-                </p>
-              ) : (
-                <form
-                  onSubmit={handleEmailSubmit}
-                  className="flex flex-col gap-2 sm:gap-3 md:gap-4 items-center"
-                >
-                  {error && <p className="text-red-500 text-xs sm:text-sm md:text-base">{error}</p>}
-                  <input
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder={dict.homepage.section6.form.placeholder}
-                    className="px-2 sm:px-3 md:px-4 py-1 sm:py-1.5 md:py-2 border rounded w-full max-w-xs sm:max-w-sm md:max-w-md bg-black text-white border-gray-500 text-xs sm:text-sm md:text-base"
-                    required
-                  />
-                  <button
-                    type="submit"
-                    className="text-gray-500 text-xs sm:text-sm md:text-base underline"
-                    disabled={isLoading}
-                  >
-                    {isLoading
-                      ? dict.homepage.section6.form.submitting
-                      : dict.homepage.section6.form.button}
-                  </button>
-                </form>
-              )}
-            </div>
           </div>
         </div>
         <Navbar position="bottom" translations={navbarTranslations} />
