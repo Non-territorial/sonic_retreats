@@ -57,47 +57,11 @@ interface HomeClientProps {
 }
 
 export default function HomeClient({ retreats, dict, navbarTranslations }: HomeClientProps) {
-  const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-  const [error, setError] = useState<string | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedPlaybackId, setSelectedPlaybackId] = useState("");
   const [selectedVideoTitle, setSelectedVideoTitle] = useState("");
   const [selectedVideoDescription, setSelectedVideoDescription] = useState("");
-  const [isLoading] = useState(false);
 
-  const handleEmailSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    try {
-      const response = await fetch("/api/submit-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email }),
-      });
-
-      let data;
-      try {
-        const text = await response.text();
-        data = JSON.parse(text);
-      } catch (jsonError) {
-        console.error("Error parsing JSON:", jsonError);
-        setError(dict.homepage.section6.form.invalid_response);
-        return;
-      }
-
-      if (response.ok) {
-        setSubmitted(true);
-        setEmail("");
-      } else {
-        setError(data.error || dict.homepage.section6.form.error);
-      }
-    } catch (error) {
-      console.error("Error submitting email:", error);
-      setError(dict.homepage.section6.form.error);
-    }
-  };
 
   const openModal = (playbackId: string, title: string, description: string) => {
     setSelectedPlaybackId(playbackId);
