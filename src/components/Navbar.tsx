@@ -78,8 +78,8 @@ const Navbar: React.FC<NavbarProps> = ({ position, translations }) => {
       ) : (
         <div className="w-full flex flex-row justify-between items-center">
           <div className="flex-1 flex justify-start">
-            <div className="text-[10px] sm:text-xs md:text-xs" style={{ color: "#ffffff" }}>
-              © 2025 BRAVE HILLS
+            <div className="text-[10px] sm:text-xs md:text-xs" style={{ color: '#ffffff' }}>
+              © 2025 SONIC reTREATS AB
             </div>
           </div>
           <div className="flex-1 flex justify-center">
