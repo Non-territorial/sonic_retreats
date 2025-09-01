@@ -1,9 +1,18 @@
+"use client";
 
 import Navbar from "./Navbar";
 import Video from "./Video";
 import { useState } from "react";
 import Image from "next/image";
+import VideoModal from "./VideoModal";
 
+interface Retreat {
+  title: string;
+  location: string;
+  time: string;
+  playbackId: string;
+  description: string;
+}
 
 interface Dictionary {
   homepage: {
@@ -12,6 +21,20 @@ interface Dictionary {
     section3: { title: string; description: string };
     section4: { title: string; description: string };
     section5: { image_alt: string };
+    section6: {
+      title_label: string;
+      location_label: string;
+      time_label: string;
+      retreats: Retreat[];
+      form: {
+        placeholder: string;
+        button: string;
+        submitting: string;
+        success: string;
+        error: string;
+        invalid_response: string;
+      };
+    };
     section7: { description: string };
     section8: { image_alt: string };
     section9: { description: string };
@@ -19,20 +42,41 @@ interface Dictionary {
 }
 
 interface NavbarTranslations {
+  retreats: string;
   enquire: string;
   contact: string;
   faq: string;
   terms: string;
   privacy: string;
-  about: string; // Added for About page link
 }
 
 interface HomeClientProps {
+  retreats: Retreat[];
   dict: Dictionary;
   navbarTranslations: NavbarTranslations;
 }
 
 export default function HomeClient({ retreats, dict, navbarTranslations }: HomeClientProps) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedPlaybackId, setSelectedPlaybackId] = useState("");
+  const [selectedVideoTitle, setSelectedVideoTitle] = useState("");
+  const [selectedVideoDescription, setSelectedVideoDescription] = useState("");
+
+
+  const openModal = (playbackId: string, title: string, description: string) => {
+    setSelectedPlaybackId(playbackId);
+    setSelectedVideoTitle(title);
+    setSelectedVideoDescription(description);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedPlaybackId("");
+    setSelectedVideoTitle("");
+    setSelectedVideoDescription("");
+  };
+
   return (
     <div className="flex flex-col">
       {/* Section 1: Hero with Background Video */}
@@ -159,12 +203,21 @@ export default function HomeClient({ retreats, dict, navbarTranslations }: HomeC
       >
         <Navbar position="top" translations={navbarTranslations} />
         <div className="relative z-10 text-left w-full max-w-sm sm:max-w-md md:max-w-6xl px-4 sm:px-6">
-          <p className="text-base sm:text-3xl md:text-5xl leading-relaxed md:leading-relaxed md:ml-14 text-white font-ibm-plex-mono">
+          <p className="text-base sm:text-3xl md:text-5xl leading-relaxed md:leading-relaxed md:ml-14 text-white">
             {dict.homepage.section9.description}
           </p>
         </div>
         <Navbar position="bottom" translations={navbarTranslations} />
       </section>
+
+      {/* Video Modal */}
+      <VideoModal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        playbackId={selectedPlaybackId}
+        videoTitle={selectedVideoTitle}
+        videoDescription={selectedVideoDescription}
+      />
     </div>
   );
 }
