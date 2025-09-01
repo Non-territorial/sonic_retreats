@@ -40,26 +40,7 @@ interface HomeClientProps {
   navbarTranslations: NavbarTranslations;
 }
 
-export default function HomeClient({ retreats, dict, navbarTranslations }: HomeClientProps) {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedPlaybackId, setSelectedPlaybackId] = useState("");
-  const [selectedVideoTitle, setSelectedVideoTitle] = useState("");
-  const [selectedVideoDescription, setSelectedVideoDescription] = useState("");
-
-
-  const openModal = (playbackId: string, title: string, description: string) => {
-    setSelectedPlaybackId(playbackId);
-    setSelectedVideoTitle(title);
-    setSelectedVideoDescription(description);
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-    setSelectedPlaybackId("");
-    setSelectedVideoTitle("");
-    setSelectedVideoDescription("");
-  };
+export default function HomeClient({ dict, navbarTranslations }: HomeClientProps) {
 
   return (
     <div className="flex flex-col">
