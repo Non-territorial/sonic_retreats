@@ -1,7 +1,7 @@
+'use client';
 
 import Navbar from "./Navbar";
 import Video from "./Video";
-import { useState } from "react";
 import Image from "next/image";
 
 
@@ -32,7 +32,7 @@ interface HomeClientProps {
   navbarTranslations: NavbarTranslations;
 }
 
-export default function HomeClient({ retreats, dict, navbarTranslations }: HomeClientProps) {
+export default function HomeClient({ dict, navbarTranslations }: HomeClientProps) {
   return (
     <div className="flex flex-col">
       {/* Section 1: Hero with Background Video */}
