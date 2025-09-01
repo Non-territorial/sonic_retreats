@@ -58,13 +58,6 @@ const Navbar: React.FC<NavbarProps> = ({ position, translations }) => {
                   {locale.toUpperCase()}
                 </Link>
               ))}
-              <Link
-                href={`/${currentLocale}/#section-6`}
-                className="hidden md:inline text-[10px] sm:text-sm md:text-base"
-                style={{ color: "#ffffff" }}
-              >
-                {translations.retreats}
-              </Link>
               <a
                 href="mailto:info@sonicretreats.net"
                 className="hidden md:inline text-[10px] sm:text-sm md:text-base"
