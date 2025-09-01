@@ -167,38 +167,6 @@ export default function HomeClient({ retreats, dict, navbarTranslations }: HomeC
         <Navbar position="bottom" translations={navbarTranslations} />
       </section>
 
-      {/* Section 6: Retreats List and Form */}
-      <section id="section-6" className="relative min-h-screen bg-black flex items-center justify-center">
-        <Navbar position="top" translations={navbarTranslations} />
-        <div className="relative z-10 text-left w-full max-w-sm sm:max-w-md md:max-w-6xl px-4 sm:px-6">
-          <div className="text-white">
-            <div className="grid grid-cols-3 gap-x-4 sm:gap-x-8 md:gap-x-12 text-xs sm:text-sm md:text-base font-bold mb-2 sm:mb-3 md:mb-4">
-              <span>{dict.homepage.section6.title_label}</span>
-              <span>{dict.homepage.section6.location_label}</span>
-              <span className="text-left">{dict.homepage.section6.time_label}</span>
-            </div>
-            <div className="space-y-2 sm:space-y-3 md:space-y-4 text-gray-500 text-xs sm:text-sm md:text-base">
-              {retreats.map((retreat, index) => (
-                <div
-                  key={index}
-                  className="grid grid-cols-3 gap-x-4 sm:gap-x-8 md:gap-x-12 border-b border-gray-500 pb-1 sm:pb-2"
-                >
-                  <button
-                    onClick={() => openModal(retreat.playbackId, retreat.title, retreat.description)}
-                    className="text-left text-gray-500 hover:text-gray-400"
-                  >
-                    {retreat.title}
-                  </button>
-                  <span>{retreat.location}</span>
-                  <span className="text-left">{retreat.time}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-        <Navbar position="bottom" translations={navbarTranslations} />
-      </section>
-
       {/* Section 7: Full-Page Section */}
       <section
         id="section-7"
