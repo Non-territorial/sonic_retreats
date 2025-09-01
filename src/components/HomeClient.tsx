@@ -2,9 +2,7 @@
 
 import Navbar from "./Navbar";
 import Video from "./Video";
-import { useState } from "react";
 import Image from "next/image";
-import VideoModal from "./VideoModal";
 
 interface Retreat {
   title: string;
@@ -21,20 +19,6 @@ interface Dictionary {
     section3: { title: string; description: string };
     section4: { title: string; description: string };
     section5: { image_alt: string };
-    section6: {
-      title_label: string;
-      location_label: string;
-      time_label: string;
-      retreats: Retreat[];
-      form: {
-        placeholder: string;
-        button: string;
-        submitting: string;
-        success: string;
-        error: string;
-        invalid_response: string;
-      };
-    };
     section7: { description: string };
     section8: { image_alt: string };
     section9: { description: string };
@@ -210,14 +194,6 @@ export default function HomeClient({ retreats, dict, navbarTranslations }: HomeC
         <Navbar position="bottom" translations={navbarTranslations} />
       </section>
 
-      {/* Video Modal */}
-      <VideoModal
-        isOpen={isModalOpen}
-        onClose={closeModal}
-        playbackId={selectedPlaybackId}
-        videoTitle={selectedVideoTitle}
-        videoDescription={selectedVideoDescription}
-      />
     </div>
   );
 }
